@@ -6,20 +6,26 @@ main{
     border: 5px solid white;
   
     display:grid;
-   grid-template-rows: 20vh 80vh;
+   grid-template-rows: 1fr 7fr;
    
   }
   
   .main_small_logos{
-    border: 2px solid white;
+  background-color: wheat;
     min-width: 100%;
-    min-height: 10%;
+min-height: 100%;
+display: flex;
+justify-content: left;
+align-items: center;
+    gap:1rem;
+    padding-left:6rem;
   }
   
   .main_recipe_section{
-    border: 2px solid white;
+   
+    background-color: wheat;
     min-width: 100%;
-    min-height: 90%;
+
     display:flex;
   align-items: flex-start;
  padding-left:6rem;
@@ -32,13 +38,14 @@ main{
     max-height: 70%;
   max-width: 60%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  
     
   }
 
   .main_recipe_section_h{
  
   font-family: "Times New Roman", Times, serif;
+  color: rgba(24, 22, 22, 0.808);
   font-weight: bold;
   font-size: 32px;
   border-bottom: 2px solid rgba(82, 78, 78, 0.342);
@@ -53,9 +60,17 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 18px;
+    color: rgba(24, 22, 22, 0.808);
   }
 
   .recipe_table{
-    
-   
+    padding-top: 0.5rem;
+ padding-bottom: 0.5rem;
+   display: grid;
+   grid-template-columns: 60vh 40vh;
+   color: rgba(24, 22, 22, 0.808);
+  }
+
+  .table_col{
+    text-align: start;
   }
