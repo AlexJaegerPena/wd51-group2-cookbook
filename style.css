@@ -1,8 +1,49 @@
-@import url("./styles/main.css");
-@import url("./styles/nav.css");
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  
+display: flex;
+justify-content: center;
+align-content: center;
+margin: 2rem;
+
+}
+
+.container{
+  display:flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column nowrap;
+  background-color: green;
+  min-width: 30%;
+  min-height: 80vh;
+  border: 2px solid white;
+}
+
+.container header{
+  background-color: blue;
+  min-width: 100%;
+  min-height: 20vh;
+
+}
+.container nav{
+  background-color: rgb(199, 134, 15);
+  min-width: 100%;
+  min-height: 60vh ;
+}
+main{
+  
+  background-color:wheat;
+  min-width: 60%;
+  min-height: 80vh;
+  border: 2px solid white;
+
+  display:grid;
+ grid-template-rows: 10vh 70vh;
 }
