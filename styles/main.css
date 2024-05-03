@@ -1,0 +1,21 @@
+main{
+  
+    background-color:wheat;
+    min-width: 60%;
+    min-height: 80vh;
+    border: 5px solid white;
+  
+    display:grid;
+   grid-template-rows: 10vh 70vh;
+   
+  }
+  
+  .main_small_logos{
+    border: 2px solid white;
+    
+  }
+  
+  .main_recipe_section{
+    border: 2px solid white;
+    
+  }
