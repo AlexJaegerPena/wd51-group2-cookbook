@@ -73,7 +73,7 @@ align-items: center;
   flex-flow:wrap;
   justify-content:space-between;
    color: rgba(24, 22, 22, 0.808);
-   gap: 15rem;
+   gap: 10rem;
  
   
 
@@ -89,6 +89,8 @@ align-items: center;
   }
   .recipe-table,th,td{
     border: 0.5px solid;
+    padding: 15px;
+  text-align: left;
   }
   
 
