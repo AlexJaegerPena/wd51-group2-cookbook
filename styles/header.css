@@ -4,8 +4,8 @@
     align-items: start;
     flex-flow: column nowrap;
     background-color: green;
-    min-width: 30%;
-    min-height: 80vh;
+    min-width: 40%;
+    
     border: 5px solid white;
   }
   
