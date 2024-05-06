@@ -1,0 +1,22 @@
+.container{
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-flow: column nowrap;
+    background-color: green;
+    min-width: 30%;
+    min-height: 80vh;
+    border: 5px solid white;
+  }
+  
+  .container header{
+    background-color: blue;
+    min-width: 100%;
+    min-height: 20vh;
+  
+  }
+  .container nav{
+    background-color: rgb(199, 134, 15);
+    min-width: 100%;
+    min-height: 60vh ;
+  }
