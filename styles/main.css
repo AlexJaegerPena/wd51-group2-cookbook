@@ -65,14 +65,40 @@ align-items: center;
     color: rgba(24, 22, 22, 0.808);
   }
 
-  .recipe_table{
+  .ing-container{
+    
     padding-top: 0.5rem;
  padding-bottom: 0.5rem;
-   display: grid;
-   grid-template-columns: 60vh 40vh;
+  display: flex;
+  flex-flow:wrap;
+  justify-content:space-between;
    color: rgba(24, 22, 22, 0.808);
+   gap: 15rem;
+ 
+  
+
+   @media screen and (max-width: 600px) {
+    padding-top: -15rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-flow:column nowrap;
+    gap: 1rem;
+    max-width: 60%;
+    }
+  
   }
+  .recipe-table,th,td{
+    border: 0.5px solid;
+  }
+  
 
   .table_col{
     text-align: start;
+    
+  }
+
+  .recipe-time{
+
+text-align: center;
+
   }
