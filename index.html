@@ -1,13 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=“en”>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset=“UTF-8" />
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0" />
+    <link rel=“stylesheet” href=“style.css” />
+    <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css” integrity=“sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd” crossorigin=“anonymous”>
+    <script src=“https://cdn.tailwindcss.com”></script>
     <title>Cookbook</title>
   </head>
   <body>
-    <nav></nav>
-    <main></main>
-  </body>
+    <nav class=“w-2/5 h-screen bg-gray-100 border-r-2 border-gray-300">
+      <div>
+        <div class=“flex items-center justify-center italic py-1”>
+          <img
+            src=“https://api.logo.com/api/v2/images?logo=logo_8162ae71-94d7-424a-ae43-0f5f77760d70&u=1714906692&width=20&height=20&fit=contain&margins=&format=webp&quality=60”
+            alt=“”
+          />
+          <h1 class=“text-2xl px-1 pb-1">Saffron</h1>
+        </div>
+        <div class=“text-center text-gray-400”>
+          <p class=“text-[9px] tracking-wider pb-2">725/RECIPES</p>
+        </div>
+      </div>
+      <div>
+        <div class=“text-[12px] border-y border-gray-300 p-1 text-gray-400”>
+          <select name=“recipes” id=“recipes” class=“text-gray-500 bg-gray-100">
+            <option value=“spice&rice”>Spice & Rice</option>
+            <option value=“chickenkarahi”>Chicken Karahi</option>
+            <option value=“baryani”>Baryani</option>
+            <option value=“kablipalao”>Kabli Palao</option>
+          </select>
+        </div>
+        <div class=“flex”>
+          <div class=“w-2/5 border-r border-gray-300">
+            <ul class=“text-[11px] m-2 text-gray-500 h-screen”>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                salad
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                spices & more
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                Rice
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                main dish
+              </li>
+              <div
+                class=“text-[12px] text-gray-500 border-y border-gray-300 p-1 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                <p>Add Section</p>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <ul class=“text-[11px] m-2 text-gray-500”>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                Ginger Garlic Paste
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                Chicken Biryani
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                Pressure Cooker Checkpeas
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                Shawarma Spice Blend
+              </li>
+              <li
+                class=“pb-3 hover:bg-slate-500 hover:text-white cursor-pointer”
+              >
+                Za’atar
+              </li>
+            </ul>
+            <div
+              class=“text-[12px] text-gray-500 border-y border-gray-300 p-1 px-2 hover:bg-slate-500 hover:text-white cursor-pointer”
+            >
+              <p>Add Recipe</p>
+            </div>
+            <div
+              class=“text-[12px] text-gray-500 border-y border-gray-300 p-1 px-2 hover:bg-slate-500 hover:text-white cursor-pointer”
+            >
+              <button onclick=“message()“>Share Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <main >
+  <section>
+    <div class=“main_small_logos”>
+    <i class=“bi bi-pencil-fill”></i>
+    <i class=“bi bi-arrows-angle-contract”></i>
+    <i class=“bi bi-calendar-week”></i>
+    <i class=“bi bi-arrows-angle-contract”></i>
+    <i class=“bi bi-rulers”></i>
+    <i class=“bi bi-share”></i>
+    <i class=“bi bi-floppy”></i>
+    <i class=“bi bi-trash3-fill”></i>
+    <i class=“bi bi-three-dots-vertical”></i>
+  </div>
+    </section>
+    <section class=“main_recipe_section”>
+<h1 class=“main_recipe_section_h”>
+Chicken Biryani
+</h1>
+<p class=“main_recipe_section_p”>
+  This chicken biryani recipe features succulent, juicy pieces of chicken that are cooked in a yogurt marinade and then layered with crispy onions, coriander, mint and basmati rice to give you a dish that the entire family will enjoy.
+</p>
+<img class=“main_recipe_section_img” src=“./images/chickenpic.png” alt=“food pic”>
+<div class=“recipe_table”>
+  <div>
+    <h3>Ingridents:</h3>
+    <table>
+      <tr>
+<th class=“table_col”>Chicken :</th>
+<th class=“table_col”>100gram</th>
+      </tr>
+   <tr>
+   <th class=“table_col”>Tomato :</th>
+   <th class=“table_col”>4 medium size</th>
+              </tr>
+    <tr>
+    <th class=“table_col”>Onion :</th>
+    <th class=“table_col”>1 medium size</th>
+    </tr>
+                      <tr>
+                      <th class=“table_col”>oil :</th>
+                      <th class=“table_col”>2tb</th>
+                              </tr>
+          <tr>
+                                <th class=“table_col”>Spices :</th>
+                                <th class=“table_col”>Shan chicken biryani masala</th>
+                                      </tr>
+      </table>
+  </div>
+  <div>
+  <h3>Total</h3>
+   <p>60 mints</p>
+  </div>
+</div>
+    </section>
+  </main>
+    <script src=“index.js”></script>
+</body>
 </html>
