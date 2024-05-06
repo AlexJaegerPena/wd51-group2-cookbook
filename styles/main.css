@@ -1,8 +1,8 @@
 main{
   
-    background-color:rgba(230, 174, 71, 0.486);
+    background-color:gray;
     min-width: 60%;
-    min-height: 80vh;
+    min-height: 60vh;
     border: 5px solid white;
   
     display:grid;
