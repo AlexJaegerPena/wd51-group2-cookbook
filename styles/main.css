@@ -53,6 +53,12 @@ main{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.food-img_container {
+  position: relative;
+  object-fit: fill;
+ 
+}
+
 .ing-container{
   display:grid;
   grid-template-columns: 5fr 1fr;
