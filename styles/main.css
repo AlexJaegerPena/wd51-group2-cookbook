@@ -1,3 +1,4 @@
+
 main{
   background-color: lawngreen;
   display: flex;
@@ -39,7 +40,6 @@ main{
   gap:0.5rem;
 
 }
-
 .main_recipe_section_h{
  
   font-size: 24px;
@@ -76,5 +76,62 @@ main{
 .recipe-time{
   font-size: 10px;
   flex-wrap: nowrap;
+}
+
+
+
+/* ---- hover section ---- */
+
+.img_overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  padding: 25px;
+  text-align: center;
+}
+
+.food-img_container:hover .img_overlay {
+  opacity: 1;
+}
+
+.main_small_logos i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.main_small_logos button:hover {
+  transform: scale(1.2);
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 10px;
+  margin-left: -2.5rem;
+  margin-top: -1.2rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover {
+  transform: scale(1.1);
+  /* color: rgb(175, 7, 7); */
 }
 
