@@ -7,7 +7,7 @@ main {
 }
 
 .main_small_logos {
-  background-color: red;
+ 
   align-items: left;
   padding: 1rem;
   min-width: 100%;
@@ -29,7 +29,8 @@ main {
 
 .main_recipe_section {
   align-items: left;
-  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 1rem;
   min-width: 100%;
   display: flex;
   flex-flow: column wrap;
@@ -44,13 +45,14 @@ main {
 }
 
 .main_recipe_section_p {
-  font-size: 10px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .food-img_container {
   position: relative;
   object-fit: fill;
+  
 }
 
 .ing-container {
@@ -66,16 +68,18 @@ main {
   }
 }
 
-.recipe-table,
+
 th,
 tr {
+  
+  border-right: 0.3px solid;
   padding: 0.1rem;
-  font-size: 8px;
+  font-size: 12px;
   text-align: left;
 }
 
 .recipe-time {
-  font-size: 10px;
+  font-size: 12px;
   flex-wrap: nowrap;
 }
 
