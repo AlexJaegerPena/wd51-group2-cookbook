@@ -1,106 +1,139 @@
-main{
-  
-    background-color:rgba(230, 174, 71, 0.486);
-    min-width: 60%;
-    min-height: 80vh;
-    border: 5px solid white;
-  
-    display:grid;
-   grid-template-rows: 1fr 7fr;
-   
-  }
-  
-  .main_small_logos{
-  background-color: wheat;
+main {
+  background-color: lawngreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.main_small_logos {
+ 
+  align-items: left;
+  padding: 1rem;
+  min-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  opacity: 90%;
+
+  @media screen and (max-width: 600px) {
+    align-items: left;
+    padding: 0.5rem;
     min-width: 100%;
-min-height: 100%;
-display: flex;
-justify-content: left;
-align-items: center;
-    gap:1rem;
-    padding-left:6rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
     opacity: 90%;
   }
-  
-  .main_recipe_section{
-   
-    background-color: wheat;
-    min-width: 100%;
+}
 
-    display:flex;
-  align-items: flex-start;
- padding-left:6rem;
-    flex-flow: column nowrap;
-    
-    
-  }
-  .main_recipe_section_img{
-    object-fit: fill;
-    max-height: 70%;
-  max-width: 60%;
-  padding-top: 1rem;
-  
-    
-  }
-
-  .main_recipe_section_h{
- 
-  font-family: "Times New Roman", Times, serif;
-  color: rgba(24, 22, 22, 0.808);
-  font-weight: bold;
-  font-size: 32px;
-  border-bottom: 2px solid rgba(82, 78, 78, 0.342);
- min-width: 60%;
- 
- padding-bottom: 0.5rem;
-  
-  }
-
-  .main_recipe_section_p{
-    max-width: 60%;
-    padding-top: 0.5rem;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: 100;
-    font-size: 16px;
-    color: rgba(24, 22, 22, 0.808);
-  }
-
-  .ing-container{
-    
-    padding-top: 0.5rem;
- padding-bottom: 0.5rem;
+.main_recipe_section {
+  align-items: left;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  min-width: 100%;
   display: flex;
-  flex-flow:wrap;
-  justify-content:space-between;
-   color: rgba(24, 22, 22, 0.808);
-   gap: 10rem;
- 
-  
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.main_recipe_section_h {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 1px solid gray;
+}
 
-   @media screen and (max-width: 600px) {
-    padding-top: -15rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    flex-flow:column nowrap;
-    gap: 1rem;
-    max-width: 60%;
-    }
+.main_recipe_section_p {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.food-img_container {
+  position: relative;
+  object-fit: fill;
   
+}
+
+.ing-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+
+  @media screen and (max-width: 600px) {
+    display: grid;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: left;
+    align-content: left;
   }
-  th,td{
-    border: 0.5px solid;
-    padding: 15px;
+}
+
+
+th,
+tr {
+  
+  border-right: 0.3px solid;
+  padding: 0.1rem;
+  font-size: 12px;
   text-align: left;
-  }
-  
+}
 
-  .table_col{
-    text-align: start;
-    
-  }
+.recipe-time {
+  font-size: 12px;
+  flex-wrap: nowrap;
+}
 
-  .recipe-time{
+/* ---- hover section ---- */
 
-text-align: center;
+.img_overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  padding: 25px;
+  text-align: center;
+}
 
-  }
+.food-img_container:hover .img_overlay {
+  opacity: 1;
+}
+
+.main_small_logos i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.main_small_logos button:hover {
+  transform: scale(1.2);
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: black;
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 10px;
+  margin-left: -2.5rem;
+  margin-top: -0.7rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover {
+  transform: scale(1.1);
+  /* color: rgb(175, 7, 7); */
+}
